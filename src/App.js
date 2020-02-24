@@ -65,7 +65,7 @@ function App () {
   }))
   let { items } = store
   items = useMemo(() => {
-    return [...Array.from({ length: 100 }).keys()]
+    return [...Array.from({ length: 1000 }).keys()]
       .map(v => ({
         text: v,
         id: generateID()
